@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title><{$remsg}></title>
+        <meta http-equiv="refresh" content="<{$retime}>;url=<{$reurl}>" />
+    <style>
+        body{
+        	margin:0;
+            padding:0;
+        }
+        .msg_info{
+	        margin:0 auto;
+            width:500px;
+            margin-top:200px;
+        }
+        .msg_info *{
+	       padding:0;
+        }
+        .msg_info .msg{
+        	float:left;
+            width:100%;
+	        font-size:14px;
+            font-weight:bold;
+            color:green;
+        }
+        .msg_info .info{
+        	float:left;
+	        font-size:13px;
+            width:100%;
+            padding:0;
+            text-indent:10px;
+            padding-top:10px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="msg_info">
+            <div class="msg"><{$remsg}></div>
+            <div class="info">将在<{$retime}>秒后跳转到<a href="<{$reurl}>">点击跳转</a></div>
+        </div>
+        
+    </body>
+</html>
